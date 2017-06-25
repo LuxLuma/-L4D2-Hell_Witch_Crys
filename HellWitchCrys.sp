@@ -73,7 +73,7 @@ new bool:g_bTankRush = false;
 public Plugin:myinfo = 
 {
 	name = "Hell_Witch_Crys",
-	author = "Ludastar (Armonic)",
+	author = "Lux",
 	description = "You'll think twice about messing with the witch c:",
 	version = PLUGIN_VERSION,
 	url = "http://steamcommunity.com/id/ArmonicJourney"
