@@ -125,14 +125,14 @@ public OnPluginStart()
 {	
 	CreateConVar("Hell_Witch_Crys", PLUGIN_VERSION, " Version of Hell_Witch_Crys ", FCVAR_SPONLY|FCVAR_DONTRECORD);
 	
-	hCvar_HellWitch		=	CreateConVar("HW_Enable", "1", "Should We Enable the HellWitchCrys?", FCVAR_PLUGIN, true, 0.0, true, 1.0);
-	hCvar_TankMobCount = 	CreateConVar("HW_TankCount", "6", "Amount In TankMob 0 = Disable", FCVAR_PLUGIN, true, 0.0, true, 31.0);
-	hCvar_HunterMobCount = 	CreateConVar("HW_HunterCount", "4", "Amount In HunterMob 0 = Disable", FCVAR_PLUGIN, true, 0.0, true, 31.0);
-	hCvar_ChargerMobCount = CreateConVar("HW_ChargerCount", "4", "Amount In ChangerMob 0 = Disable", FCVAR_PLUGIN, true, 0.0, true, 31.0);
-	hCvar_BoomerMobCount = 	CreateConVar("HW_BoomerCount", "4", "Amount In BoomerMob 0 = Disable", FCVAR_PLUGIN, true, 0.0, true, 31.0);
-	hCvar_MobCall		=	CreateConVar("HW_MobCall", "1", "Should We Enable Mobs?", FCVAR_PLUGIN, true, 0.0, true, 1.0);
-	hCvar_DirHint		=	CreateConVar("HW_DirectorHint", "1", "Should We Enable Director Hints?", FCVAR_PLUGIN, true, 0.0, true, 1.0);
-	hCvar_TankRush		=	CreateConVar("HW_TankRush", "1", "Should We Enable TankRush Globally?", FCVAR_PLUGIN, true, 0.0, true, 1.0);
+	hCvar_HellWitch		=	CreateConVar("HW_Enable", "1", "Should We Enable the HellWitchCrys?", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	hCvar_TankMobCount = 	CreateConVar("HW_TankCount", "6", "Amount In TankMob 0 = Disable", FCVAR_NOTIFY, true, 0.0, true, 31.0);
+	hCvar_HunterMobCount = 	CreateConVar("HW_HunterCount", "4", "Amount In HunterMob 0 = Disable", FCVAR_NOTIFY, true, 0.0, true, 31.0);
+	hCvar_ChargerMobCount = CreateConVar("HW_ChargerCount", "4", "Amount In ChangerMob 0 = Disable", FCVAR_NOTIFY, true, 0.0, true, 31.0);
+	hCvar_BoomerMobCount = 	CreateConVar("HW_BoomerCount", "4", "Amount In BoomerMob 0 = Disable", FCVAR_NOTIFY, true, 0.0, true, 31.0);
+	hCvar_MobCall		=	CreateConVar("HW_MobCall", "1", "Should We Enable Mobs?", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	hCvar_DirHint		=	CreateConVar("HW_DirectorHint", "1", "Should We Enable Director Hints?", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	hCvar_TankRush		=	CreateConVar("HW_TankRush", "1", "Should We Enable TankRush Globally?", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	
 	#if ENABLE_AUTOEXEC
 	AutoExecConfig(true, "Hell_Witch_Crys");
